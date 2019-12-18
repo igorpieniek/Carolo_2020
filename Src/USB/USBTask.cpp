@@ -30,7 +30,7 @@
 #include "Buttons.h"
 #include "tim.h"
 
-
+//cc
 extern void MX_USB_DEVICE_Init(void);
 
 void USB_Receive_Data(void);
@@ -51,8 +51,8 @@ int32_t USB_RX_signal = 1 << 0;
 int32_t USB_TX_signal = 1 << 1;
 uint8_t usbDenominator = 5;
 
-uint8_t left_indicator = 1;
-uint8_t right_indicator = 1;
+uint8_t left_indicator = 0;
+uint8_t right_indicator = 0;
 uint32_t timestamp = 5;
 odroid_setpoints_t odroid_setpoints = {0.f, 0.f, 0.f, 0.f, 0.f};
 

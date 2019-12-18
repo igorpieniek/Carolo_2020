@@ -220,7 +220,7 @@ void StartSteeringTask(void const * argument) {
 
 				servo.SetAngleD(odroid_setpoints.fi, odroid_setpoints.dfi);
 				motor.SetDuty(futaba.SmoothDeflection[PITCH]);
-				motor.SetVelocity(motor.getMaxVelocity() * futaba.SmoothDeflection[PITCH], 10000.f, 50000.f);
+				motor.SetVelocity(motor.getMaxVelocity() * futaba.SmoothDeflection[PITCH], 3000.f, 50000.f);
 			} else if (futaba.SwitchB == SWITCH_DOWN) {
 				reczny = true;
 				rc_mode = MODE_AUTONOMOUS;
